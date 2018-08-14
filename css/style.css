@@ -13,7 +13,11 @@ a {
   clear: both;
   content: "";
 }
-a:hover {
+.top_button:hover {
+  transition: 0.3s;
+  color: #333;
+}
+.detail_sub_button:hover {
   transition: 0.3s;
   color: #333;
 }
@@ -34,6 +38,7 @@ a:hover {
   float: left;
 }
 .top_button {
+  transition: 0.3s;
   text-align: center;
   float: right;
   font-size: 12px;
@@ -73,6 +78,7 @@ a:hover {
   vertical-align: bottom;
 }
 .center_content {
+  width: 60%;
   float: left;
 }
 .center_title {
@@ -114,6 +120,7 @@ a:hover {
 .detail_img>.detailimg {
   opacity: 0.7;
   display: block;
+  transition: 0.3s;
 }
 .detail_img>.detailimg:hover {
   opacity: 1;
@@ -128,6 +135,7 @@ a:hover {
   font-size: 17.5px;
 }
 .detail_sub_button {
+  transition: 0.3s;
   background-color: #74cfae;
   color: #fff;
   font-size: 12px;
@@ -176,10 +184,11 @@ a:hover {
   display: inline-block;
 }
 .sns-inner {
-  margin: 200px 0 200px 0;
+  padding: 200px 0 200px 0;
   text-align: center;
 }
 .bottom>.sns-icon {
+  transition: 0.3s;
   display: inline-block;
   width: 185px;
   padding: 30px;
@@ -189,7 +198,6 @@ a:hover {
 .bottom>.sns-icon:hover {
   background-color: #fff;
   transition: all 0.3s;
-  cursor: pointer;
 }
 .footer {
   background-color: #74cfae;
