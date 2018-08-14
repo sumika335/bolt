@@ -1,8 +1,21 @@
 body {
-  font-family: "Google Fonts";
+  font-family: "Raleway";
 }
 a {
   text-decoration: none;
+}
+.inner {
+  width: 1100px;
+  margin: 0 auto;
+}
+.clearfix::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+a:hover {
+  transition: 0.3s;
+  color: #333;
 }
 .wrapper {
   background-color: #f2f2f2;
@@ -14,12 +27,11 @@ a {
   z-index: 1;
 }
 .header-inner {
-  width: 1100px;
-  margin: 0 auto;
   padding: 15px;
 }
 .fa-flash {
   color: #4e4e4e;
+  float: left;
 }
 .top_button {
   text-align: center;
@@ -29,15 +41,12 @@ a {
   color: #fff;
   background-color: #74cfae;
 }
-.header-inner::after {
-  display: block;
-  clear: both;
-  content: "";
+.main {
+  padding-top: 78px;
 }
 .title {
-  padding: 250px;
+  padding: 250px 0 250px 0;
   text-align: center;
-  vertical-align: middle;
 }
 .main_title {
   font-size: 90px;
@@ -48,33 +57,28 @@ a {
   font-size: 30px;
   color: #c0c0c0;
   margin-top: 20px;
-  font-family: "Raleway";
 }
 .center {
   background-color: #74cfae;
 }
 .center-inner {
   padding-top: 50px;
-  width: 1100px;
-  margin: 0 auto;
+}
+.motif_img {
+  float: left;
+  width: 40%;
+  text-align: center;
 }
 .motif {
   vertical-align: bottom;
-  padding-left: 90px;
 }
 .center_content {
-  float: right;
-}
-.center-inner::after {
-  display: block;
-  clear: both;
-  content: "";
+  float: left;
 }
 .center_title {
   text-align: center;
   font-size: 24px;
   color: #fff;
-  font-family: "Raleway";
 }
 .center_sub_title {
   line-height: 30px;
@@ -82,43 +86,36 @@ a {
   margin-top: 35px;
   color: #fff;
   text-align: center;
+  font-family: Lato;
 }
 .work-inner {
   padding-top: 60px;
   padding-bottom: 70px;
-  width: 1100px;
-  margin: 0 auto;
 }
 .detail_title {
   text-align: center;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
   font-size: 24px;
   color: #333;
-  font-family: "Raleway";
-}
-.detail>li {
-  padding-left: 100px;
-  float: left;
 }
 .work_detail {
   margin-bottom: 90px;
 }
-.work_detail::after {
-  display: block;
-  clear: both;
-  content: "";
+.detail>li {
+  margin-left: 100px;
+  float: left;
 }
 .detail>li:nth-child(3n+1) {
-  padding-left: 0;
+  margin-left: 0;
 }
-.detail>li>h2 {
+.detail>li:nth-child(n+4) {
   margin-top: 80px;
 }
-.detail_img>img {
+.detail_img>.detailimg {
   opacity: 0.7;
   display: block;
 }
-.detail_img>img:hover {
+.detail_img>.detailimg:hover {
   opacity: 1;
   transition: 0.3s;
 }
@@ -127,7 +124,8 @@ a {
   text-align: center;
   width: 500px;
   float: left;
-  font-family: "Raleway";
+  font-family: Lato;
+  font-size: 17.5px;
 }
 .detail_sub_button {
   background-color: #74cfae;
@@ -138,60 +136,57 @@ a {
   text-align: center;
   margin-left: 90px;
   float: left;
-  font-family: "Raleway";
 }
 .detail_sub {
   width: 720px;
   margin: 0 auto;
+  margin-top: 90px;
 }
-.detail_sub::after {
-  display: block;
-  clear: both;
-  content: "";
+.skill {
+  background-color: #4e4e4e;
 }
 .skill-inner {
-  background-color: #4e4e4e;
   padding-top: 70px;
   padding-bottom: 100px;
+  text-align: center;
 }
 .skill_title{
   font-size: 24px;
   color: #fff;
   text-align: center;
-  font-family: "Raleway";
 }
 .skill_graph {
-  width: 1100px;
-  margin: 0 auto;
-  padding-top: 70px;
-  padding-left: 15px;
-  clear: both;
+  margin-top: 70px;
+  display: inline-block;
 }
 .graph {
   display: inline-block;
-  padding-left: 180px;
+  margin-left: 180px;
 }
 .graph:first-child {
-  padding-left: 0;
+  margin-left: 0;
 }
 .graph_p {
   font-size: 16px;
   color: #fff;
-  padding-top: 20px;
+  margin-top: 20px;
   text-align: center;
+}
+.bottom {
+  display: inline-block;
 }
 .sns-inner {
-  padding: 200px 0 200px 0;
-  width: 1100px;
-  margin: 0 auto;
-}
-.sns-icon>i {
-  color:#74cfae;
-  width: 185px;
-  padding: 30px;
+  margin: 200px 0 200px 0;
   text-align: center;
 }
-.sns-icon>i:hover {
+.bottom>.sns-icon {
+  display: inline-block;
+  width: 185px;
+  padding: 30px;
+  color:#74cfae;
+  text-align: center;
+}
+.bottom>.sns-icon:hover {
   background-color: #fff;
   transition: all 0.3s;
   cursor: pointer;
@@ -200,8 +195,6 @@ a {
   background-color: #74cfae;
 }
 .footer-inner {
-  width: 1100px;
-  margin: 0 auto;
   padding: 20px 0 25px 0;
 }
 .footer_p {
